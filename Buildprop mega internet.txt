@@ -1,0 +1,147 @@
+ro.media.enc.jpeg.quality=100
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.capture.maxres=8m
+ro.media.panorama.defres=3264×1840
+ro.media.panorama.frameres=1280×720
+ro.camcorder.videoModes=true
+ro.media.enc.hprof.vid.fps=65
+ro.media.dec.aud.wma.enabled=1
+ro.media.dec.vid.wmv.enabled=1
+ro.media.dec.aud.mp3.enabled=1
+ro.media.dec.vid.mp4.enabled=1
+ro.media.enc.aud.wma.enabled=1
+ro.media.enc.vid.wmv.enabled=1
+ro.media.enc.aud.mp3.enabled=1
+ro.media.enc.vid.mp4.enabled=1
+ro.media.dec.aud.flac.enabled=1
+ro.media.dec.vid.H.264.enabled=1
+ro.media.enc.aud.flac.enabled=1
+ro.media.enc.vid.H.264.enabled=1
+
+# Battery Efficiency Tweaks
+ro.ril.disable.power.collapse=0
+ro.ril.power_collapse=1
+power_supply.wakeup=enable
+profiler.force_disable_ulog=true
+profiler.force_disable_err_rpt=true
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+
+# Performance Tweaks
+debug.performance.tuning=1
+debug.kill_allocating_task=0
+force_hw_ui=true
+ro.debuggable=1
+
+# Steaming Tweaks
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-record=true
+
+# Net Speed Tweak
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.lte=524288,1048576,2097152,524288,1048576,2097152
+net.tcp.buffersize.hsdpa=6144,87380,1048576,6144,87380,1048576
+net.tcp.buffersize.hspa=6144,87380,524288,6144,16384,262144
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.evdo_b=6144,87380,1048576,6144,87380,1048576
+net.ipv4.tcp_ecn=0
+net.ipv4.route.flush=1
+net.ipv4.tcp_rfc1337=1
+net.ipv4.ip_no_pmtu_disc=0
+net.ipv4.tcp_sack=1
+net.ipv4.tcp_fack=1
+net.ipv4.tcp_window_scaling=1
+net.ipv4.tcp_timestamps=1
+net.ipv4.tcp_rmem=4096 39000 187000
+net.ipv4.tcp_wmem=4096 39000 187000
+net.ipv4.tcp_mem=187000 187000 187000
+net.ipv4.tcp_no_metrics_save=1
+net.ipv4.tcp_moderate_rcvbuf=1
+net.ipv6.tcp_ecn=0
+net.ipv6.route.flush=1
+net.ipv6.tcp_rfc1337=1
+net.ipv6.ip_no_pmtu_disc=0
+net.ipv6.tcp_sack=1
+net.ipv6.tcp_fack=1
+net.ipv6.tcp_window_scaling=1
+net.ipv6.tcp_timestamps=1
+net.ipv6.tcp_rmem=4096 39000 187000
+net.ipv6.tcp_wmem=4096 39000 187000
+net.ipv6.tcp_mem=187000 187000 187000
+net.ipv6.tcp_no_metrics_save=1
+net.ipv6.tcp_moderate_rcvbuf=1
+net.tethering.noprovisioning=true
+
+# IPV4 and IPV6 Support
+persist.telephony.support.ipv6=1
+persist.telephony.support.ipv4=1
+
+# 3G/4G Tweaks
+ro.ril.hsxpa=12
+ro.ril.hspa=12
+ro.ril.lte=12
+ro.ril.lte=12
+ro.ril.ltea=12
+ro.ril.hep=1
+ro.ril.enable.3g.prefix=1
+ro.ril.enable.4g.prefix=1
+ro.ril.enable.dtm=1
+ro.ril.hspaclass=12
+ro.ril.lteclass=12
+ro.ril.gprsclass=12
+ro.ril.hsupa.category=9
+ro.ril.hsdpa.category=30
+ro.ril.lte.category=9
+ro.ril.ltea.category=30
+ro.ril.enable.a51=1
+ro.ril.enable.a52=1
+ro.ril.enable.a53=1
+ro.ril.enable.a54=1
+ro.ril.enable.a55=1
+persist.cust.tel.eons=1
+
+# Gaming Tweaks
+persist.sys.NV_FPSLIMIT=90
+persist.sys.NV_POWERMODE=1
+persist.sys.NV_PROFVER=15
+persist.sys.NV_STEREOCTRL=0
+persist.sys.NV_STEREOSEPCHG=0
+persist.sys.NV_STEREOSEP=30
+
+# Responsiveness & Speed Tweaks
+ro.telephony.call_ring.delay=0
+ro.ril.enable.amr.wideband=1
+ro.lge.proximity.delay=25
+mot.proximity.delay=25
+pm.sleep_mode=1
+ro.config.nocheckin=1
+ro.config.vc_call_default=10
+
+# Camera Tweaks Supports GoogleCamera
+persist.camera.HAL3.enabled=1
+camera.HAL3.enabled=1
+persist.camera.eis.enable=1
+camera.eis.enable=1
+persist.camera.is_mode=4
+camera.is_mode=4
+persist.camera.disable_zsl_mode=1
+camera.disable_zsl_mode=1
+persist.camera.gyro.android=4
+camera.gyro.android=4
+persist.camera.tof.direct=1
+camera.tof.direct=1
+persist.camera.tnr.preview=1
+camera.tnr.preview=1
+persist.camera.tnr.video=1
+camera.tnr.video=1
+ro.camera.notify_nfc=1
+camera.notify_nfc=1

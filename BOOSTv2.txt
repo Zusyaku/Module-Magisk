@@ -1,0 +1,152 @@
+net.rmnet0.dns1=208.67.222.222
+net.rmnet0.dns2=208.67.220.220
+net.dns=208.67.220.222
+net.dns=208.67.220.220
+
+# Signal Tweaks + Fast Dormancy
+ro.ril.hsxpa=2
+ro.ril.gprsclass=12
+ro.ril.hep=1
+ro.ril.hsdpa.category=10
+ro.ril.hsupa.category=6
+persist.cust.tel.eons=1
+ro.ril.enable.3g.prefix=1
+ro.ril.htcmaskw1.bitmask=4294967295
+ro.ril.htcmaskw1=14449
+ro.ril.def.agps.mode=2
+#
+
+# GSM=1, CDMA=2
+
+#ro.ril.def.agps.feature=1
+
+#
+
+#ril.cdma.ppp.up=1
+ro.ril.enable.sdr=1
+ro.ril.enable.gea3=1
+ro.ril.enable.fd.plmn.prefix=23402,23410,23411
+ro.ril.enable.a52=0
+ro.ril.enable.a53=1
+ro.ril.enable.dtm=1
+ro.ril.disable.power.collapse=1
+persist.ril.uart.flowctrl=10
+ro.mot.eri.losalert.delay=2000
+ro.ril.enable.amr.wideband=1
+ro.config.hw_fast_dormancy=0
+ro.semc.enable.fast_dormancy=false
+persist.radio.add_power_save=1
+
+# Zram Tweaks
+
+#persist.service.zram=0
+
+#ro.zram.default=0
+
+
+# Wireless + TCP Speed & Security Tweaks
+net.core.wmem_max=1048576
+net.core.rmem_max=1048576
+net.core.rmem_default=262144
+net.core.wmem_default=262144
+net.core.optmem_max=20480
+net.unix.max_dgram_qlen=50
+#
+
+# Define TCP buffer sizes for various networks
+
+# ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax
+
+#
+
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.lte=262144,524288,3145728,262144,524288,3145728
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.evdo=4096,87380,563200,4096,16384,262144
+net.tcp.buffersize.evdo_b=6144,262144,1048576,6144,262144,1048576
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hspa=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hspap=4096,87380,1220608,4096,16384,393216
+net.tcp.buffersize.hsupa=4096,87380,704512,4096,16384,262144
+net.tcp.buffersize.hsdpa=6144,262144,1048576,6144,262144,1048576
+
+# IPv4
+
+net.ipv4.tcp_ecn=0
+net.ipv4.route.flush=1
+net.ipv4.tcp_rfc1337=1
+net.ipv4.ip_no_pmtu_disc=0
+net.ipv4.tcp_sack=1
+net.ipv4.tcp_fack=1
+net.ipv4.tcp_window_scaling=1
+net.ipv4.tcp_timestamps=0
+net.ipv4.tcp_rmem='6144 87380 1048576'
+net.ipv4.tcp_wmem='6144 87380 1048576'
+net.ipv4.tcp_mem='187000 187000 187000'
+net.ipv4.tcp_no_metrics_save=1
+net.ipv4.icmp_echo_ignore_all=1
+net.ipv4.tcp_moderate_rcvbuf=1
+net.ipv4.conf.all.accept_redirects=0
+net.ipv4.conf.default.accept_redirects=0
+net.ipv4.conf.all.rp_filter=1
+
+#net.ipv4.conf.<device>.rp_filter=1
+net.ipv4.conf.default.rp_filter=1
+net.ipv4.conf.all.send_redirects=0
+net.ipv4.conf.default.send_redirects=0
+net.ipv4.conf.all.secure_redirects=0
+net.ipv4.conf.default.secure_redirects=0
+net.ipv4.conf.all.accept_source_route=0
+net.ipv4.conf.default.accept_source_route=0
+net.ipv4.udp_rmem_min=6144
+net.ipv4.udp_wmem_min=6144
+net.ipv4.tcp_tw_recycle=1
+net.ipv4.tcp_tw_reuse=1
+net.ipv4.tcp_syncookies=1
+net.ipv4.tcp_synack_retries=2
+net.ipv4.tcp_syn_retries=2
+net.ipv4.tcp_max_syn_backlog=1024
+net.ipv4.tcp_max_tw_buckets=16384
+net.ipv4.icmp_echo_ignore_broadcasts=1
+net.ipv4.icmp_ignore_bogus_error_responses=1
+net.ipv4.tcp_fin_timeout=15
+net.ipv4.tcp_keepalive_intvl=30
+net.ipv4.tcp_keepalive_probes=5
+net.ipv4.tcp_keepalive_time=1800
+net.ipv4.ip_forward=0
+
+#
+
+#net.tcp.default_init_rwnd=60
+
+#
+
+# IPv6
+
+#net.ipv6.conf.all.accept_redirects=0
+
+#net.ipv6.conf.default.accept_redirects=0
+
+#net.ipv6.conf.all.use_tempaddr=2
+
+#net.ipv6.conf.default.use_tempaddr=2
+
+# Disable IPv6
+net.ipv6.conf.all.disable_ipv6=1
+net.ipv6.conf.default.disable_ipv6=1
+
+
+# Makes streaming videos stream faster
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=false
+media.stagefright.enable-http=true
+media.stagefright.enable-record=true
+
+# Graphics (outdated - use only if you not changed this settings in your camera app)
+video.accelerate.hw=1
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.enc.jpeg.quality=100,100,100
