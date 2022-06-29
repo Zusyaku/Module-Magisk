@@ -1,0 +1,59 @@
+# Fastest!? boost Settings
+#
+ro.ril.hsxpa=3
+ro.ril.gprsclass=32
+ro.ril.hep=1
+ro.ril.hsdpa.category=28
+ro.ril.enable.3g.prefix=1
+ro.ril.htcmaskw1.bitmask=4294967295
+ro.ril.htcmaskw1=268449905
+ro.ril.hsupa.category=9
+ro.ril.enable.sdr=1
+ro.ril.enable.gea3=1
+ro.ril.enable.fd.plmn.prefix=23402,23410,23411
+ro.ril.disable.power.collapse=1
+ro.ril.def.agps.mode=2
+# Note for the next setting - GSM=1, CDMA=2
+ro.ril.def.agps.feature=2
+#
+ril.cdma.ppp.up=
+#
+persist.ril.uart.flowctrl=10
+ro.mot.eri.losalert.delay=2000
+ro.ril.enable.a52=0
+ro.ril.enable.a53=1
+ro.ril.enable.dtm=1
+# To fix connection issues, change "enable.a53" and "enable.dtm" to be =0
+#
+# ID-DNS Tweaks
+net.dns1=203.142.82.222
+net.dns2=203.142.84.222
+net.wcdma.dns1=203.142.82.222
+net.wcdma.dns2=203.142.84.222
+net.hspa.dns1=203.142.82.222
+net.hspa.dns2=203.142.84.222
+net.lte.dns1=203.142.82.222
+net.lte.dns2=203.142.84.222
+net.ltea.dns1=203.142.82.222
+net.ltea.dns2=203.142.84.222
+net.rmnet0.dns1=203.142.82.222
+net.rmnet0.dns2=203.142.84.222
+net.gprs.dns1=203.142.82.222
+net.gprs.dns2=203.142.84.222
+net.ppp0.dns1=203.142.82.222
+net.ppp0.dns2=203.142.84.222
+net.wlan0.dns1=203.142.82.222
+net.wlan0.dns2=203.142.84.222
+net.eth0.dns1=203.142.82.222
+net.eth0.dns2=203.142.84.222
+net.tcp.buffersize.default=6144,87380,110208,6144,16384,110208
+net.tcp.buffersize.wifi=262144,524288,1048576,262144,524288,1048576
+net.tcp.buffersize.lte=262144,524288,3145728,262144,524288,3145728
+net.tcp.buffersize.hsdpa=6144,262144,1048576,6144,262144,1048576
+net.tcp.buffersize.evdo_b=6144,262144,1048576,6144,262144,1048576
+net.tcp.buffersize.umts=6144,87380,110208,6144,16384,110208
+net.tcp.buffersize.hspa=6144,87380,262144,6144,16384,262144
+net.tcp.buffersize.gprs=6144,8760,11680,6144,8760,11680
+net.tcp.buffersize.edge=6144,26280,35040,6144,16384,35040
+#
+# End of boost4g v3 Entries.

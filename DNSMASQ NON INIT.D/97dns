@@ -1,0 +1,1 @@
+        /system/bin/dnsmasq -C /data/local/dnsmasq.conf -c 65535 -x /data/local/dnsmasq.pid &
