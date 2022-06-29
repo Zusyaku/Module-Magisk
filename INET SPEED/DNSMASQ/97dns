@@ -1,0 +1,27 @@
+#!/system/bin/sh
+
+/system/bin/dnsmasq -C /data/local/dnsmasq.conf -c 65535 -x /data/local/dnsmasq.pid & 
+
+setprop net.dns1 127.0.0.1
+setprop net.rmnet0.dns1 127.0.0.1
+setprop net.wlan0.dns1 127.0.0.1
+setprop dhcp.wlan0.dns1 127.0.0.1
+setprop dhcp.eth0.dns1 127.0.0.1
+
+setprop net.dns2 8.8.4.4
+setprop net.rmnet0.dns2 8.8.4.4
+setprop net.wlan0.dns2 8.8.4.4
+setprop dhcp.wlan0.dns2 8.8.4.4
+setprop dhcp.eth0.dns2 8.8.4.4
+
+setprop net.wlan0.dns3 8.8.8.8
+setprop dhcp.wlan0.dns3 8.8.8.8
+setprop dhcp.eth0.dns3 8.8.8.8
+
+setprop net.wlan0.dns4 208.67.222.222
+setprop dhcp.wlan0.dns4 208.67.222.222
+setprop dhcp.eth0.dns4 208.67.222.222
+
+#setprop net.dns.search "<vpn_domain1> <vpn_domain2>"
+
+setprop net.change net.dnschange

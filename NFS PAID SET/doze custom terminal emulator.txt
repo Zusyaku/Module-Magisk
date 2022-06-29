@@ -1,0 +1,8 @@
+su
+dumpsys deviceidle force-idle
+
+su
+dumpsys deviceidle unforce
+
+su
+dumpsys battery reset
