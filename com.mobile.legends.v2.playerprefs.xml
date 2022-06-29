@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+
+ 
+    <int name="HighFpsMode" value="120" />
+
+    <int name="HighFpsModeSee" value="4" />
+
+    <int name="PerformanceDevice_BestFrameRate" value="120" />
+
+</map>
